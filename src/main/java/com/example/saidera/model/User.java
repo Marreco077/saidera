@@ -8,18 +8,18 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "user")
+@Table(name = "`user`")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idUser")
+    @Column(name = "idUser", nullable = false)
     private int idUser;
 
     @Column(name = "name", length = 45)
     private String name;
 
-    // Getters e Setters
+    // Getters e Setters permanecem os mesmos
     public int getIdUser() {
         return idUser;
     }
